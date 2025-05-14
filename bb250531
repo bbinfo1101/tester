@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlazeNightVol1 Calculator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 10px;
+    }
+
+    .total {
+      font-size: 1.5em;
+    }
+
+    .highlight {
+      color: #00bfff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow-x: auto;
+      display: block;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: center;
+      font-size: 0.9em;
+    }
+
+    input[type="number"] {
+      width: 60px;
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        font-size: 0.8em;
+        padding: 4px;
+      }
+
+      input[type="number"] {
+        width: 50px;
+      }
+
+      h1 {
+        font-size: 1.2em;
+      }
+
+      .total {
+        font-size: 1.2em;
+      }
+    }
+  </style>
+</head>
+
+    <meta charset="UTF-8">
+    <title>BlazeNightVol1 Calculator</title>
+    <style>
+        .total { font-size: 1.5em; }
+        .highlight { color: #00bfff; }
+    </style>
+</head>
+<body>
+    <h1>BlazeNightVol1 Calculator</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>商品名</th>
+                <th>単価 (円)</th>
+                <th>1部 数量</th>
+                <th>2部 数量</th>
+                <th>3部 数量</th>
+                <th>小計 (円)</th>
+            </tr>
+        </thead>
+        <tbody>
+
+    <tr>
+        <td>[チケット] 一般</td>
+        <td>5000</td>
+        <td><input type="number" class="quantity1" data-price="5000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="5000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="5000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[チケット] 未成年</td>
+        <td>2500</td>
+        <td><input type="number" class="quantity1" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="0" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="0" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルシャンパン] アルコール（特典：独り占めトーク2分）</td>
+        <td>25000</td>
+        <td><input type="number" class="quantity1" data-price="25000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="25000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="25000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルシャンパン] ノンアルコール（特典：独り占めトーク1分）</td>
+        <td>15000</td>
+        <td><input type="number" class="quantity1" data-price="15000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="15000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="15000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルカクテル] アキトのカクテル（特典：ランダムポストカード）</td>
+        <td>2500</td>
+        <td><input type="number" class="quantity1" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="2500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルカクテル] ジョーのHELLカクテル（特典：ランダムポストカード）</td>
+        <td>2500</td>
+        <td><input type="number" class="quantity1" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="2500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルクライナー] ブレイズブリンガーデザイン</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルクライナー] アキトデザイン</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルクライナー] JOEデザイン</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[オリジナルクライナー] Kabaya'nデザイン</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[ドリンク] シャンパンくじ</td>
+        <td>25000</td>
+        <td><input type="number" class="quantity1" data-price="25000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="25000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="25000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[ドリンク] キャストドリンク</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[グッズ] ブレイズブリンガーはっぴ</td>
+        <td>15000</td>
+        <td><input type="number" class="quantity1" data-price="15000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="15000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="15000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[グッズ] Tシャツ（黒・実写）</td>
+        <td>3500</td>
+        <td><input type="number" class="quantity1" data-price="3500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="3500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="3500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[グッズ] Tシャツ（白・イラスト）</td>
+        <td>3500</td>
+        <td><input type="number" class="quantity1" data-price="3500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="3500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="3500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[グッズ] ぶりたんペンライト</td>
+        <td>3000</td>
+        <td><input type="number" class="quantity1" data-price="3000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="3000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="3000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[グッズ] 灰皿</td>
+        <td>2500</td>
+        <td><input type="number" class="quantity1" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="2500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[グッズ] アクキー</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[チェキ] ソロ</td>
+        <td>1000</td>
+        <td><input type="number" class="quantity1" data-price="1000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[チェキ] 2ショット</td>
+        <td>2000</td>
+        <td><input type="number" class="quantity1" data-price="2000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="2000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="2000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[チェキ] 3ショット</td>
+        <td>3000</td>
+        <td><input type="number" class="quantity1" data-price="3000" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="3000" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="3000" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[デジショ] ソロ</td>
+        <td>1500</td>
+        <td><input type="number" class="quantity1" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="1500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="1500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[デジショ] 2ショット</td>
+        <td>2500</td>
+        <td><input type="number" class="quantity1" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="2500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="2500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+    <tr>
+        <td>[デジショ] 3ショット</td>
+        <td>3500</td>
+        <td><input type="number" class="quantity1" data-price="3500" value="0"></td>
+        <td><input type="number" class="quantity2" data-price="3500" value="0"></td>
+        <td><input type="number" class="quantity3" data-price="3500" value="0"></td>
+        <td class="subtotal">0</td>
+    </tr>
+
+        </tbody>
+    </table>
+    <h2>合計</h2>
+    <p>1部のみの合計: <span id="total1">0</span> 円</p>
+    <p>2部のみの合計: <span id="total2">0</span> 円</p>
+    <p class="total">1部+2部の合計（5万円以上で”3部・スペシャルナイト”参加可能）: <span id="total12">0</span> 円</p>
+    <p>3部の合計: <span id="total3">0</span> 円</p>
+    <p class="total">総合計: <span id="grandTotal">0</span> 円</p>
+
+    <script>
+        function updateTotals() {
+            let total1 = 0;
+            let total2 = 0;
+            let total3 = 0;
+
+            document.querySelectorAll('tbody tr').forEach(row => {
+                const price = parseFloat(row.querySelector('td:nth-child(2)').textContent);
+                const quantity1 = parseInt(row.querySelector('.quantity1').value) || 0;
+                const quantity2 = parseInt(row.querySelector('.quantity2').value) || 0;
+                const quantity3 = parseInt(row.querySelector('.quantity3').value) || 0;
+
+                const subtotal = (quantity1 + quantity2 + quantity3) * price;
+                row.querySelector('.subtotal').textContent = subtotal;
+
+                total1 += quantity1 * price;
+                total2 += quantity2 * price;
+                total3 += quantity3 * price;
+            });
+
+            document.getElementById('total1').textContent = total1;
+            document.getElementById('total2').textContent = total2;
+            document.getElementById('total3').textContent = total3;
+
+            const total12 = total1 + total2;
+            document.getElementById('total12').textContent = total12;
+            document.getElementById('total12').className = total12 >= 50000 ? 'highlight' : '';
+
+            const grandTotal = total12 + total3;
+            document.getElementById('grandTotal').textContent = grandTotal;
+        }
+
+        document.querySelectorAll('.quantity1, .quantity2, .quantity3').forEach(input => {
+            input.addEventListener('input', updateTotals);
+        });
+
+        updateTotals();
+    </script>
+</body>
+</html>
